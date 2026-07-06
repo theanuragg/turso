@@ -25,7 +25,7 @@
   },
   "scripts": {
     "tsc-build": "npm exec tsc",
-    "build": "npm run tsc-build",
+    "build": "node init && npm run tsc-build",
     "test": "echo 'no tests'"
   },
   "dependencies": {
