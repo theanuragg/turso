@@ -34,8 +34,8 @@
     "napi-dirs": "napi create-npm-dirs",
     "napi-artifacts": "napi artifacts --output-dir .",
     "tsc-build": "npm exec tsc",
-    "build": "npm run napi-build && npm run tsc-build",
-    "build:test-helper": "npm run napi-build:test-helper && npm run tsc-build",
+    "build": "node init && npm run napi-build && npm run tsc-build",
+    "build:test-helper": "node init && npm run napi-build:test-helper && npm run tsc-build",
     "test": "vitest --run",
     "prepublishOnly": "npm run napi-dirs && npm run napi-artifacts && napi prepublish -t npm"
   },

@@ -33,9 +33,9 @@
     "typescript": "tsc --noEmit",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "clean": "del-cli lib",
-    "build": "bob build",
-    "build:rust:ios": "make ios",
-    "build:rust:android": "make android",
+    "build": "node init && bob build",
+    "build:rust:ios": "node init && make ios",
+    "build:rust:android": "node init && make android",
     "prepare": "bob build"
   },
   "keywords": [
